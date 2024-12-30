@@ -19,5 +19,5 @@ public class Loop6 {
 		
 		System.out.println("홀수들의 합" + sum2);
 		System.out.println("짝수들의 합" + sum1);
-	}
+	} 
 }
