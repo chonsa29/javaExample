@@ -8,6 +8,6 @@ public class Override1 {
 		orange.color = "주황색";
 		orange.price = 100000;
 		
-		System.out.println(orange);
+		System.out.println(orange );
 	}
 }

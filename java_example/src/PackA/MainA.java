@@ -7,6 +7,6 @@ public class MainA {
 		a.varPublic = 10;
 		a.varDefault = 10;
 		a.varProtected = 10;
-		a.varPrivate = 10;
+//		a.varPrivate = 10;
 	}
 }
