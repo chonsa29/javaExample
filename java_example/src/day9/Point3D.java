@@ -9,11 +9,11 @@ public class Point3D extends Point {
 	}
 
 	int moveUp() {
-		return z = z + 1;
+		return z++;
 	}
 
 	int moveDown() {
-		return z = z - 1;
+		return z--;
 	}
 
 	void move(int x, int y, int z) {
