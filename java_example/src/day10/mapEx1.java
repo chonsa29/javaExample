@@ -38,6 +38,7 @@ public class mapEx1 {
 				for (int i = 0; i < list.size(); i++) {
 					if (list.get(i).get("name").equals(str)) {
 						list.remove(i);
+						break;
 					}
 				}
 
