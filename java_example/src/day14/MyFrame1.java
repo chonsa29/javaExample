@@ -1,40 +1,35 @@
-package day13;
+package day14;
 
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class MyFrame2 extends JFrame {
+public class MyFrame1 extends JFrame {
 
-	public MyFrame2() {
+	public MyFrame1() {
 		setTitle("첫번째 GUI");
 
-		Random ran = new Random();
 		Container c = getContentPane();
 		c.setBackground(Color.cyan);
-		c.setLayout(null);
+		c.setLayout(new FlowLayout());
 
-		for(int i = 1;i<=10;i++) {
-			JButton btn = new JButton(i + "");
-			btn.setSize(50,50);
-			int x = ran.nextInt(700);
-			int y = ran.nextInt(700);
-			btn.setLocation(x,y);
-			c.add(btn);;
-		}
+		JButton btn1 = new JButton("Action");
+		btn1.addActionListener(new MyEvent());
+
+		c.add(btn1);
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(800, 800);
+		setSize(300, 300);
 		setVisible(true);
 	}
 
 	public static void main(String[] args) {
-		MyFrame2 gui = new MyFrame2();
+		MyFrame1 gui = new MyFrame1();
 	}
 }
 
